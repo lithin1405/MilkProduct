@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SellProductsActivity">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/invoicetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_title"
+            android:textColor="@color/my_spinner_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/invoicaddresstwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_address"
+            android:textColor="@color/my_spinner_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="14sp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/invoicaddressmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_mobile"
+            android:textColor="@color/my_spinner_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/estimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/estimate"
+            android:textColor="@color/my_spinner_text_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/agentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agent_name"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/contactno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_no"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvtm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:text="Brands"
+                android:gravity="center"
+                android:textColor="@color/my_spinner_text_color"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rate"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:text="@string/m"
+                android:gravity="center"
+                android:textColor="@color/my_spinner_text_color"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvtmqtyno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="V"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Amount"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S.T.D"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="48.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mstdprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vstdprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="1"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totsstdprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="48.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="T.M"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="44.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="1"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tottmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="44.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOLD"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="54.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="1"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="54.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D.T.M"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="42.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIJ.SMALL"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="M M"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="52.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODEL SMALL"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COW MILK"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="51.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100ML CUPS"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7.25"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mhunmlcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vhunmlcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tothuncups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURD 175ML"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="42.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totvscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="400ML CUPS"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="28.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURD 450ML"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B Milk"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LASSI"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDLY BATTER"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="30.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/midlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vidlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totalidlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOSA BATTER"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="30.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mdosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vdosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totaldosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Totals"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:background="@drawable/rectangle"
+                android:textColor="@color/my_spinner_text_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totalqnty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/my_spinner_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvtotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/comission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/netamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/numtowords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    <!--<android.support.v7.widget.LinearLayoutCompat-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/rectangle"-->
+        <!--android:orientation="vertical">-->
+    <!--</android.support.v7.widget.LinearLayoutCompat>-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/happy_new_year_2019"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thank_you"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* * *"
+                android:textColor="@color/my_spinner_text_color"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#094EA7"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorselect"
+            android:text="@string/bluetooth_btnSearch" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#094EA7"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorselect"
+            android:text="@string/print" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#094EA7"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorselect"
+            android:text="Exit" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>

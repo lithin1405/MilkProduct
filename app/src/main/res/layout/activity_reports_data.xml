@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/progressbar_loading" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorselect"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_number"
+                android:textSize="15sp"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold" />
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/invoice_date"
+                android:textSize="15sp"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_name"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/qty"
+                android:textSize="15sp"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/commission"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/net_amount"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="@color/colorselect"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorselect"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/installed_app_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+            <!--android:text="@string/total_amount"-->
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <!--android:text="@string/total_commission"-->
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/mark" />
+            <!--android:text="@string/total_qty"-->
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tottalqty"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:text="0"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+
+            <TextView
+                android:id="@+id/totalcommission"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:text="0"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+            <View
+                style="@style/SeperatorGrayVertical"
+                android:layout_width="1dp"/>
+            <TextView
+                android:id="@+id/totalamount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/my_spinner_text_color"
+                android:text="0"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+    </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

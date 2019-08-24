@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SellProductsActivity">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Toolbar-->
+        <include layout="@layout/toolbar" />
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+                <!--<android.support.v7.widget.LinearLayoutCompat-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<android.support.v7.widget.AppCompatTextView-->
+                        <!--android:id="@+id/name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/name"-->
+                        <!--android:textColor="#000051"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="20sp" />-->
+                <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+            <!--<android.support.v7.widget.LinearLayoutCompat-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:orientation="horizontal">-->
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/modal"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/model" />-->
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/vijaya"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/vijaya"-->
+                    <!--android:layout_marginLeft="10dp" />-->
+
+            <!--</android.support.v7.widget.LinearLayoutCompat>-->
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/customername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="16sp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/currentdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#212121"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:textSize="16sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/product"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvunit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_price"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvmqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvvqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/v"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cost_price"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rectangle"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="S.T.D"
+                        android:textColor="#000051"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="48.00"
+                        android:gravity="center"
+                        android:textColor="#000051"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/mstdprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#000051"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/vstdprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#000051"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/totsstdprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="#000051"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="T.M"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="44.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tottmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="GOLD"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="54.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totgoldprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D.T.M"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="42.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totdtmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="VIJ. SMALL"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totvijsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="M.M"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="52.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totmmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MODEL SMALL"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totmodsmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="COW MILK"
+                android:textColor="#000051"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="51.00"
+                android:gravity="center"
+                android:textColor="#000051"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000051"
+                android:text=""
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totcmprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000051"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100ML CUPS"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/hunmlcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7.25"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mhunmlcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vhunmlcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tothuncups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CURD 175ML"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/scurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="42.50"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totvscurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="400ML CUPS"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="28.00"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totfourcups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CURD 450ML"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="45.00"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totbcurdprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B MILK"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/bmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6.00"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totbmilkprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LASSI"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9.00"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#e91e63"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totlassiprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="IDLY BATTER"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/idlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="30.00"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/midlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vidlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totalidlyprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#00701a"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DOSA BATTER"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="30.00"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/mdosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/vdosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#00701a"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/totaldosaprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#00701a"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="end"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000051"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#094EA7"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/colorselect"
+                        android:text="@string/update_order" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonGenerate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#094EA7"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorselect"
+                        android:text="@string/generate_invoice" />
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#094EA7"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="20dp"
+                        android:textColor="@color/colorselect"
+                        android:text="@string/bluetooth_btnSearch"
+                        android:visibility="gone"/>
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonPrint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#094EA7"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/colorselect"
+                        android:text="@string/print"
+                        android:visibility="gone"/>
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonExit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#094EA7"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/colorselect"
+                        android:text="New Entry"
+                        android:visibility="gone"/>
+                </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>

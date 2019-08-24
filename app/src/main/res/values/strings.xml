@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Phani Milk</string>
+    <string name="name">PHANI MILK PRODUCTS SUPPLY</string>
+
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login">Login</string>
+
+    <string name="select_customer">Customer Name:  </string>
+    <string name="select_product">Product Type:</string>
+    <string name="product">Product</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="v">V</string>
+    <string name="m">Qty</string>
+    <string name="cost_price">Cost Price</string>
+    <string name="spinner">Select</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="preview_invoice">Preview Invoice</string>
+
+    <string name="product_type">Product Type</string>
+    <string name="product_qty">Qty</string>
+    <string name="product_cost">Cost</string>
+
+    <string name="update_order">Update Order</string>
+    <string name="generate_invoice">Generate Invoice</string>
+
+    <!--Login-->
+    <string name="error_message_name">Enter Username</string>
+    <string name="error_message_password">Enter Password</string>
+
+    <!--//Invoice-->
+    <string name="invoice_title">PHANI MILK PRODUCTS SUPPLY</string>
+    <string name="invoice_address">Cement Road,VidyadharaPuram,Vja-12</string>
+    <string name="invoice_mobile">Mobile No:9246497111,8885523456</string>
+    <string name="estimate">ESTIMATE</string>
+    <string name="estimate_id">Estimate ID: 74019</string>
+    <string name="date">Date :19–06–2019</string>
+    <string name="agent_name">Agent Name : PHANI</string>
+    <string name="contact_no">Contact No : 9246497111</string>
+
+    <string name="insecure_connect">Connect a device</string>
+    <string name="secure_connect">Connect a device-secure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="actMain_name">Pride Demo App</string>
+    <string name="actMain_link_device_info_title">Selected Device :</string>
+    <string name="actMain_device_info">%1$s</string>
+    <string name="actMain_btn_pair">Pair</string>
+    <string name="actMain_btn_comm">Connect</string>
+    <string name="actMain_tv_hint_service_uuid_not_bond">Please pair with the Device.</string>
+    <string name="actMain_msg_does_not_support_uuid_service">Application BT version does not support this Mobile.</string>
+    <string name="actMain_msg_bluetooth_Bonding">Pairing&#8230;</string>
+    <string name="actMain_msg_device_connecting">Connecting device&#8230;</string>
+    <string name="actMain_msg_device_connect_fail">Communication failure</string>
+    <string name="actMain_msg_bluetooth_Bond_Success">Pairing successful</string>
+    <string name="actMain_msg_bluetooth_Bond_fail">Pairing failed</string>
+    <string name="actMain_msg_pair_pwd_error">Password for Pairing must be 4 digits</string>
+    <string name="actMain_menu_rescan">Rescan</string>
+    <string name="actDiscovery_msg_select_device">Select the device you need to connect</string>
+    <string name="actDiscovery_msg_not_find_device">Devices not found</string>
+    <string name="actDiscovery_msg_scaning_device">Searching for Bluetooth devices, Please wait&#8230;</string>
+    <string name="actDiscovery_msg_starting_device">Bluetooth is turned on&#8230;</string>
+    <string name="actDiscovery_msg_start_bluetooth_fail">Bluetooth turn on failed</string>
+    <string name="actDiscovery_msg_bluetooth_not_start">Bluetooth is not enabled</string>
+    <string name="actDiscovery_menu_scan">Scan</string>
+    <string name="actDiscovery_bond_bonded">Bonded</string>
+    <string name="actDiscovery_bond_nothing">Nothing</string>
+    <string name="actByteStream_btn_send_desc">Send button</string>
+    <string name="actByteStream_tv_receive_text">Data receive</string>
+    <string name="protocol">General Protocol</string>
+    <string name="escprotocol">Esc Sequence Protocol</string>
+    <string name="device_type_bredr">BR/EDR Bluetooth</string>
+    <string name="device_type_ble">Bluetooth Communication Speed is Low</string>
+    <string name="msg_msg_bt_connect_lost">Device is in offline / Communication failure</string>
+    <string name="Connect">Connect</string>
+    <string name="not_connected1">Mobile is not connected with device</string>
+    <string name="bt_not_enabled_leaving1">Bluetooth was not enabled. Exiting Application.</string>
+    <string name="title_connecting1">Connecting...</string>
+    <string name="title_not_connected1">Not connected</string>
+    <string name="hello_world">Hello</string>
+    <!-- DeviceListActivity -->
+    <string name="scanning1">Scanning for devices...</string>
+    <string name="select_device1">Select a device to connect</string>
+    <string name="none_paired1">No devices have been paired</string>
+    <string name="none_found1">No devices found</string>
+    <string name="title_paired_devices1">Paired Devices</string>
+    <string name="title_other_devices1">Available Devices</string>
+    <string name="button_scan1">Scan for devices</string>
+    <string name="note">Note</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+
+    <!-- USB资源 -->
+    <string name="usb_header_text">Usb</string>
+    <string name="usb_btn_conn">Connect USB Printer</string>
+    <string name="usb_btnSend">Print</string>
+    <string name="usb_qr_code_Send">2D Barcode Print</string>
+    <string name="usb_btn_test">Print Test Page</string>
+    <string name="usb_btnClose">Close</string>
+    <string name="usb_txt_content">&quot;&quot;</string>
+    <string name="usb_hoin_enterprise_vision"></string>
+    <string name="usb_menu_settings">set</string>
+    <string name="usb_strLang">en</string>
+    <string name="usb_msg_getpermission">obtaining USB device access permissions success</string>
+    <string name="usb_msg_conn_state">USB device can not access, please re-connect</string>
+    <string name="usb_qr_code_Send_string">SDK 2D-Code print test.</string>
+
+    <!-- BlueTooth资源 -->
+    <string name="bluetooth_header_text">BlueTooth</string>
+    <string name="bluetooth_none_paired">No devices have been paired</string>
+    <string name="bluetooth_scanning">scanning for devices…</string>
+    <string name="bluetooth_select_device">select a device to connect</string>
+    <string name="bluetooth_none_found">No devices found</string>
+    <string name="bluetooth_btnSearch">Connect Device</string>
+    <string name="bluetooth_btnSend">Print</string>
+    <string name="bluetooth_qr_code_Send">2D Barcode Print</string>
+    <string name="bluetooth_btn_test">Print Test Page</string>
+    <string name="bluetooth_btnClose">Close</string>
+    <string name="bluetooth_txt_content" />
+    <string name="bluetooth_menu_settings">set</string>
+    <string name="bluetooth_strLang">en</string>
+    <string name="bluetooth_button_scan">Scan for devices</string>
+    <string name="bluetooth_qr_code_Send_string">SDK 2D-Code print test.</string>
+
+    <!-- WIFI资源 -->
+    <string name="wifi_header_text">Wifi</string>
+    <string name="wifi_btnConn">Connect WIFI Printer</string>
+    <string name="wifi_btnPrint">Print</string>
+    <string name="wifi_qr_code_Send">2D Barcode Print</string>
+    <string name="wifi_btn_test">Print  Test  Page</string>
+    <string name="wifi_btnClose">Close</string>
+    <string name="wifi_txt_content">&quot;&quot;</string>
+    <string name="wifi_strLang">en</string>
+    <string name="wifi_lblAddressIp">IP-Address:</string>
+    <string name="wifi_btn_opencasher">Open Casher</string>
+    <string name="wifi_qr_code_Send_string">SDK 2D-Code print test.</string>
+    <string name="reports">Reports</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="generate_reports">Generate Reports</string>
+    <string name="invoice_number">Invoice No.</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="commission">Commission</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="qty">Qty</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="total_commission">Total Commission</string>
+    <string name="total_qty">Total Qty</string>
+    <string name="print">Print</string>
+    <string name="thank_you">Thank You</string>
+    <string name="happy_new_year_2019">Happy New Year 2019</string>
+
+
+</resources>
