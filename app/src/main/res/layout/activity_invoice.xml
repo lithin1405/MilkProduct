@@ -945,7 +945,7 @@
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="LASSI"
+                android:text="@string/lassi"
                 android:textColor="#e91e63"
                 android:gravity="center"
                 android:layout_weight="1"
@@ -1006,7 +1006,7 @@
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="IDLY BATTER"
+                android:text="@string/idly_batter"
                 android:textColor="#00701a"
                 android:gravity="center"
                 android:layout_weight="1"
@@ -1067,7 +1067,7 @@
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="DOSA BATTER"
+                android:text="@string/dosa_batter"
                 android:textColor="#00701a"
                 android:gravity="center"
                 android:layout_weight="1"
@@ -1077,7 +1077,7 @@
                 android:id="@+id/dosaprice"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="30.00"
+                android:text="@string/_30_00"
                 android:textColor="#00701a"
                 android:gravity="center"
                 android:layout_weight="1"
@@ -1127,7 +1127,7 @@
                     android:id="@+id/tvtotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
                     android:textColor="#000051"
                     android:textStyle="bold"
                     android:textSize="16sp" />
@@ -1147,7 +1147,7 @@
                         android:layout_height="wrap_content"
                         android:background="#094EA7"
                         android:layout_weight="1"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
                         android:textColor="@color/colorselect"
                         android:text="@string/update_order" />
 
@@ -1157,7 +1157,7 @@
                         android:layout_height="wrap_content"
                         android:background="#094EA7"
                         android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:textColor="@color/colorselect"
                         android:text="@string/generate_invoice" />
                     <android.support.v7.widget.AppCompatButton
@@ -1190,7 +1190,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="20dp"
                         android:textColor="@color/colorselect"
-                        android:text="New Entry"
+                        android:text="@string/new_entry"
                         android:visibility="gone"/>
                 </android.support.v7.widget.LinearLayoutCompat>
     </android.support.v7.widget.LinearLayoutCompat>

@@ -108,7 +108,7 @@
     <string name="usb_btn_test">Print Test Page</string>
     <string name="usb_btnClose">Close</string>
     <string name="usb_txt_content">&quot;&quot;</string>
-    <string name="usb_hoin_enterprise_vision"></string>
+    <string name="usb_hoin_enterprise_vision" />
     <string name="usb_menu_settings">set</string>
     <string name="usb_strLang">en</string>
     <string name="usb_msg_getpermission">obtaining USB device access permissions success</string>
@@ -161,6 +161,11 @@
     <string name="print">Print</string>
     <string name="thank_you">Thank You</string>
     <string name="happy_new_year_2019">Happy New Year 2019</string>
+    <string name="new_entry">New Entry</string>
+    <string name="_30_00">30.00</string>
+    <string name="dosa_batter">DOSA BATTER</string>
+    <string name="idly_batter">IDLY BATTER</string>
+    <string name="lassi">LASSI</string>
 
 
 </resources>
